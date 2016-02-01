@@ -1,9 +1,9 @@
 #include <iostream>
-
+#include "String.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    String s;
     return 0;
 }
