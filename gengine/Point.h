@@ -19,4 +19,21 @@ class Point
         this->x=P.x;
         this->y=P.y;
     }
+    /*Returns the X coordinate of this Point2D in double precision.*/
+    void setX(double x=0.0)
+    {
+        this->x=x;
+    }
+    void setY(double y=0.0)
+    {
+        this->y=y;
+    }
+    double	getX()
+    {
+        return x;
+    }
+    double	getY()
+    {
+        return y;
+    }
 };
