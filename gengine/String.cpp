@@ -24,3 +24,37 @@ String::~String()
     strlength=0;
     delete[] buffer;
 }
+//operator overloading
+String& String::operator+=(const char* cstring)
+    {
+        int new_buffer_length =strlen(cstring)+strlength;
+        char* new_buffer = new char[new_buffer_length];
+        strcpy(new_buffer,buffer);
+        strcat(new_buffer,cstring);
+        delete[] buffer;
+        buffer=new_buffer;
+        strlength=new_buffer_length;
+		return *this;
+    }
+String& String::operator+=(const String& cstring)
+    {
+        int new_buffer_length =strlen(cstring.buffer)+strlength;
+        char* new_buffer = new char[new_buffer_length];
+        strcpy(new_buffer,buffer);
+        strcat(new_buffer,cstring.buffer);
+        delete[] buffer;
+        buffer=new_buffer;
+        strlength=new_buffer_length;
+		return *this;
+    }
+String& String::operator+(String cstring)
+    {
+        int new_buffer_length =strlen(cstring.buffer)+strlength;
+        char* new_buffer = new char[new_buffer_length];
+        strcpy(new_buffer,buffer);
+        strcat(new_buffer,cstring.buffer);
+        delete[] buffer;
+        buffer=new_buffer;
+        strlength=new_buffer_length;
+		return *this;
+    }
