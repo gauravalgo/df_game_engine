@@ -31,7 +31,6 @@ String& String::operator+=(const char* cstring)
         char* new_buffer = new char[new_buffer_length];
         strcpy(new_buffer,buffer);
         strcat(new_buffer,cstring);
-        delete[] buffer;
         buffer=new_buffer;
         strlength=new_buffer_length;
 		return *this;
@@ -42,7 +41,6 @@ String& String::operator+=(const String& cstring)
         char* new_buffer = new char[new_buffer_length];
         strcpy(new_buffer,buffer);
         strcat(new_buffer,cstring.buffer);
-        delete[] buffer;
         buffer=new_buffer;
         strlength=new_buffer_length;
 		return *this;
@@ -53,8 +51,17 @@ String& String::operator+(String cstring)
         char* new_buffer = new char[new_buffer_length];
         strcpy(new_buffer,buffer);
         strcat(new_buffer,cstring.buffer);
-        delete[] buffer;
         buffer=new_buffer;
         strlength=new_buffer_length;
 		return *this;
     }
+    String& String::operator=(const String& cstring)
+    {
+        char* new_buffer = new char[cstring.strlength];
+        strcpy(new_buffer,cstring.buffer);
+        buffer=new_buffer;
+        strlength=cstring.strlength;
+		return *this;
+    }
+
+

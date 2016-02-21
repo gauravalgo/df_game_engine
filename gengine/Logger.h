@@ -1,4 +1,5 @@
 #include<sstream>
+#include "String.h"
 using namespace std;
 
 enum LoggerLevel
@@ -19,8 +20,10 @@ private:
     Logger(const Logger& t);
 public:
     std::ostringstream& GET(const char* file,int line,const char* func,LoggerLevel level);
+    static void LOG(String cstring);
     virtual ~Logger();
     Logger(){}
+    friend class String;
 };
 //char* need to modify with the String function of the game engine
 std::ostringstream& Logger::GET(const char* file,int line,const char* func,LoggerLevel level=DEBUGINFO)
@@ -35,5 +38,14 @@ Logger::~Logger()
 {
     fprintf(stderr,"%s",os.str().c_str());
     fflush(stderr);
+}
+std::ostringstream& Logger::LOG(String cstring)
+{
+    os<<"   "<<level;
+    os<<"  File: %d"<<file;
+    os<<"  Line: %d"<<line;
+    os<<"  Function: %s"<<func;
+    os<<cstring.buffer<<endl;
+    return os;
 }
 
