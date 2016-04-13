@@ -36,6 +36,8 @@ class String
    String Lower();
    String Upper();
    int Length();
+   int toInt();
+   double toDouble();
 
    //casting operators
    operator const char*();

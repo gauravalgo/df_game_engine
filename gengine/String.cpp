@@ -63,5 +63,47 @@ String& String::operator+(String cstring)
         strlength=cstring.strlength;
 		return *this;
     }
+    int String::length()
+    {
+        return strlength;
+    }
+    String& String::Lower()
+    {
+            for(i=0;i<strlength;i++)
+            {
+                buffer[i]=buffer[i]+32;
+            }
+            return *this;
+    }
+    String& String::Upper()
+    {
 
+            for(i=0;i<strlength;i++)
+            {
+                buffer[i]=buffer[i]-32;
+            }
+            return *this;
+    }
+    int String::toInt()
+    {
+       int number=1,sum;
+       sum=0;
+        for(i=0;i<strlength;i++)
+            {
+                if((buffer[i]>='0')&&(buffer[i]<='9'))
+                {
+                    sum=(sum+(buffer[i]-'0')*number);
+                    number=number*10;
+                }
+                else
+                break;
+            }
+            if(i<strlength)
+            return -1;
+        return sum;
+    }
+    double String::toDouble()
+    {
 
+        return ;
+    }
