@@ -102,8 +102,26 @@ String& String::operator+(String cstring)
             return -1;
         return sum;
     }
+
     double String::toDouble()
     {
 
         return ;
+    }
+    void split(const String& string,String& firstpart,String& secondpart,const char& splitter)
+    {
+       int i=0;
+       int j=0;
+        while(i<string.strlength()&&string.buffer[i]!=splitter)
+        {
+            firstpart.buffer[j++]=string.buffer[i];
+            i++;
+        }
+        i++;
+        j=0;
+        while(i<string.strlength())
+        {
+
+           secondpart.buffer[j++]=string.buffer[i];
+        }
     }

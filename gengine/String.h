@@ -38,7 +38,7 @@ class String
    int Length();
    int toInt();
    double toDouble();
-
+   void split(const String& firstpart,const String& secondpart,String& splitter);
    //casting operators
    operator const char*();
 
