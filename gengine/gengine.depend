@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1462712845 source:/home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/Stack.cpp
+	"Stack.h"
+	"String.h"
+
+1462691340 /home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/Stack.h
+	<stdexcept>
+	<iostream>
+	<typeinfo>
+
+1462463461 source:/home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/gengine_main.cpp
+
+1456081057 source:/home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/Logger.cpp
+	"Logger.h"
+
+1456080953 /home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/Logger.h
+	<sstream>
+	"String.h"
+
+1462713349 /home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/String.h
+	<string.h>
+	<iostream>
+
+1462702765 source:/home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/String.cpp
+	"String.h"
+
+1462702066 source:/home/gauravalgo/game_engine_Data_Structures_05_may_2016/gengine/main.cpp
+	<iostream>
+	"Logger.h"
+	"Stack.h"
+
