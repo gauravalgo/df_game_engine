@@ -1,5 +1,8 @@
+#ifndef LOGGER_H
+#define LOGGER_H
 #include<sstream>
 #include "String.h"
+#define log(level,...)  Logger::LOG(__FILE__,__LINE__,__func__,level,__VA_ARGS__)
 using namespace std;
 
 enum LoggerLevel
@@ -15,37 +18,15 @@ class Logger
 {
 private:
     LoggerLevel level;
-    std::ostringstream os;
+    static std::ostringstream os;
     Logger &operator=(const Logger& t);
     Logger(const Logger& t);
 public:
     std::ostringstream& GET(const char* file,int line,const char* func,LoggerLevel level);
-    static void LOG(String cstring);
+    static std::ostringstream& LOG(const char* file,int line,const char* func,int level,String cstring);
     virtual ~Logger();
     Logger(){}
     friend class String;
 };
 //char* need to modify with the String function of the game engine
-std::ostringstream& Logger::GET(const char* file,int line,const char* func,LoggerLevel level=DEBUGINFO)
-{
-    os<<"   "<<level;
-    os<<"  File: %d"<<file;
-    os<<"  Line: %d"<<line;
-    os<<"  Function: %s"<<func;
-    return os;
-}
-Logger::~Logger()
-{
-    fprintf(stderr,"%s",os.str().c_str());
-    fflush(stderr);
-}
-std::ostringstream& Logger::LOG(String cstring)
-{
-    os<<"   "<<level;
-    os<<"  File: %d"<<file;
-    os<<"  Line: %d"<<line;
-    os<<"  Function: %s"<<func;
-    os<<cstring.buffer<<endl;
-    return os;
-}
-
+#endif

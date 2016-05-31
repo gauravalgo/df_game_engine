@@ -11,6 +11,7 @@ class String
     {
 
     }
+    String(int length);
     String(char ch);                  //pamaterised character constructor
     String(const char *cstring);   //paramaterised const character string constructor
     String(const String &str);          //copy constructor
@@ -33,12 +34,14 @@ class String
 
    //String functions
    void clear();
-   String Lower();
-   String Upper();
-   int Length();
+   String& Lower();
+   String& Upper();
+   int Length() const;
    int toInt();
+   void split();
    double toDouble();
-   void split(const String& firstpart,const String& secondpart,String& splitter);
+   char *tocharArray();
+   friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);
    //casting operators
    operator const char*();
 
