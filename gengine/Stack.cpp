@@ -1,5 +1,5 @@
 #include "Stack.h"
-#include "String.h"
+#include "Logger.h"
 template<class T>
 Stack<T>::Stack()
 {
@@ -7,10 +7,11 @@ Stack<T>::Stack()
     items=new T[top];
 }
 template<class T>
-Stack<T>::Stack(int top)
+Stack<T>::Stack(int max)
 {
-    top=this->top;
-    items=new T[top];
+    top=0;
+    items=new T[max];
+    Logger::log(1,"creating paramaterised constructor of Stack");
 }
 template<class T>
 Stack<T>::~Stack()
@@ -37,6 +38,9 @@ T Stack<T>::pop(void)
 template<class T>
 int Stack<T>::maxstack(void)
 {
+    char max[100];
+    sprintf(max,"the top is given by %d",top);
+    Logger::log(1,max);
     return top;
 }
 template<class T>
@@ -53,12 +57,36 @@ void Stack<T>::display()
 {
         int max=maxstack();
         int i=0;
-        while(i<=max)
+        while(i<max)
         {
-            std::cout<<"the "<<i<<"th element of the stack is "<<items[i]<<std::endl;
+            cout<<"the "<<i<<"th element of the stack is "<<items[i]<<std::endl;
             i++;
         }
 }
+template<class T>
+ bool Stack<T>::operator!=(T number)
+ {
+     int i=0;
+     bool set = true;
+     while(i<=top)
+     {
+         if(number==items[top])
+         {
+             set=false;
+             break;
+         }
+         i++;
+     }
+     return set;
+ }
+ template<class T>
+ bool Stack<T>::operator==(T number)
+ {
+        if(number==items[top])
+        return true;
+        else
+        return false;
+ }
 /* template instantion of various types*/
 template class Stack<int>;
 template class Stack<String>;

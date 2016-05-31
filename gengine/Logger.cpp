@@ -13,12 +13,14 @@ Logger::~Logger()
     fprintf(stderr,"%s",os.str().c_str());
     fflush(stderr);
 }
-std::ostringstream& Logger::LOG(const char* file,int line,const char* func,LoggerLevel level,String cstring)
+std::ostringstream& Logger::LOG(const char* file,int line,const char* func,int level,String  cstring)
 {
-    os<<"   "<<level;
-    os<<"  File: "<<file;
-    os<<"  Line: "<<line;
-    os<<"  Function: "<<func;
-    os<<cstring.buffer<<endl;
+        os<<"   "<<level;
+        os<<"  File: "<<file;
+        os<<"  Line: "<<line;
+        os<<"  Function: "<<func;
+        os<<cstring<<endl;
+        cout<<os.str();
+        os.flush();
     return os;
 }

@@ -1,5 +1,16 @@
 //testing git repository
 #include "Logger.h"
+String::String(int length)
+{
+
+    buffer =new char[length];
+    int i;
+    for(i=0;i<length;i++)
+    {
+        buffer[i]='\0';
+    }
+    strlength=length;
+}
 String::String(char ch)
 {
 
@@ -110,7 +121,7 @@ String& String::operator+(String cstring)
         /*yet to be implemented*/
         return -1;
     }
-    void String::split(const String& string,const String& firstpart,const String& secondpart,const char& splitter)
+    void split(const String& string, String& firstpart, String& secondpart,const char& splitter)
     {
        int i=0;
        int j=0;
@@ -124,11 +135,29 @@ String& String::operator+(String cstring)
         while(i<string.Length())
         {
 
-           secondpart.buffer[j++]=string.buffer[i];
+           secondpart.buffer[j++]=string.buffer[i++];
         }
+    }
+char *String::tocharArray()
+{
+            return buffer;
     }
 String::operator const char*()
 {
-    Logger::log(1,"operator user defined");
+    /*Logger::log(1,"operator user defined");*/
     return buffer;
+}
+bool String::operator==(String cstring)
+{
+    if(strcmp(cstring.buffer,buffer)==0)
+    return true;
+    else
+    return false;
+}
+bool String::operator!=(String cstring)
+{
+    if(strcmp(cstring.buffer,buffer)==0)
+    return false;
+    else
+    return true;
 }

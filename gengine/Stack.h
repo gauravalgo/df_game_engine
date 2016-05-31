@@ -19,4 +19,6 @@ class Stack
         bool isempty(void);
         T pop(void);
         void display();
+        bool operator!=(T number);
+        bool operator==(T number);
 };

@@ -2,7 +2,7 @@
 #define LOGGER_H
 #include<sstream>
 #include "String.h"
-#define log(level,str)  Logger::LOG(__FILE__,__LINE__,__func__,DEBUGWARNING,str)
+#define log(level,...)  Logger::LOG(__FILE__,__LINE__,__func__,level,__VA_ARGS__)
 using namespace std;
 enum LoggerLevel
 {
@@ -22,7 +22,7 @@ private:
     Logger(const Logger& t);
 public:
     std::ostringstream& GET(const char* file,int line,const char* func,LoggerLevel level);
-    static std::ostringstream& LOG(const char* file,int line,const char* func,LoggerLevel level,String cstring);
+    static std::ostringstream& LOG(const char* file,int line,const char* func,int level,String cstring);
     virtual ~Logger();
     Logger(){}
     friend class String;

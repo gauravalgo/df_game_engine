@@ -11,6 +11,7 @@ class String
     {
 
     }
+    String(int length);
     String(char ch);                  //pamaterised character constructor
     String(const char *cstring);   //paramaterised const character string constructor
     String(const String &str);          //copy constructor
@@ -39,7 +40,8 @@ class String
    int toInt();
    void split();
    double toDouble();
-   void split(const String& string,const String& firstpart,const String& secondpart,const char& splitter);
+   char *tocharArray();
+   friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);
    //casting operators
    operator const char*();
 
