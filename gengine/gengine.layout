@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="String.cpp" open="1" top="0" tabpos="2">
+	<File name="Logger.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="66" topLine="0" />
+	</File>
+	<File name="Logger.h" open="1" top="0" tabpos="3">
+		<Cursor position="105" topLine="0" />
+	</File>
+	<File name="Stack.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="String.h" open="1" top="1" tabpos="1">
-		<Cursor position="18" topLine="0" />
-	</File>
-	<File name="gengine_main.cpp" open="1" top="0" tabpos="3">
+	<File name="Stack.h" open="1" top="1" tabpos="1">
 		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="String.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="2612" topLine="0" />
+	</File>
+	<File name="String.h" open="1" top="0" tabpos="2">
+		<Cursor position="1178" topLine="0" />
+	</File>
+	<File name="gengine_main.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="396" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
