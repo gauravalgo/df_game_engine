@@ -1,5 +1,4 @@
-//testing git repository
-#include "Logger.h"
+#include "String.h"
 String::String(int length)
 {
 
@@ -160,4 +159,9 @@ bool String::operator!=(String cstring)
     return false;
     else
     return true;
+}
+std::ostream&  operator<<(std::ostream& out,String s)
+{
+	out<<s.tocharArray();
+	return out;
 }
