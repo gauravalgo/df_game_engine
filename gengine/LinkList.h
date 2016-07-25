@@ -1,3 +1,7 @@
+// gs.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
 #include "String.h"
 
 using namespace std;
@@ -23,24 +27,24 @@ class LinkList
 template<class T>
 LinkList<T>::LinkList()
 {
-	Head=null;
-	current=null;
+	Head=NULL;
+	current=NULL;
 
 }
 template<class T>
-LinkList<T>*::alloc_node()
+LinkList<T>* LinkList<T>::alloc_node()
 {
-	return ::operator new(sizeof(LinkList<T>));
+	return reinterpret_cast<LinkList<T>*>(::operator new(sizeof(LinkList<T>)));
 }
 template<class T>
 LinkList<T>::~LinkList()
 {
 	LinkList<T>* temp,*temp_t;
 	temp=Head;
-	while(temp->next!=null)
+	while(temp->current!=NULL)
 	{
 		temp_t=temp;
-		temp=temp->next;
+		temp=temp->current;
 		::operator delete(temp_t);
 	}
 }
@@ -48,26 +52,39 @@ template<class T>
 void LinkList<T>::insert(T& item)
 {
 	
-	current=alloc_node();
-	current->data=item;
-	current->next=null;
+	if(Head==NULL)
+	{
+		current=alloc_node();
+		Head=current;
+		
+	}
+	else
+	{
+		current->current=alloc_node();
+		current=current->current;
+	}
+		current->data=item;
+		current->current=NULL;
+		
 }
 template<class T>
 void LinkList<T>::Traverse()
 {
 	LinkList<T>* temp;
 	temp=Head;
-	while(temp->next!=null)
+	while(temp!=NULL)
 	{
 		cout<<temp->data<<endl;
+		temp=temp->current;
 	}
 }
 void f()
 {
-	LinkList<String> ll;
-	ll.insert(String("gaurav"));
-	ll.insert(String("sharma"));
-	ll.insert(String("arshad"));
+	LinkList<int> ll;
+	int i=1;
+	ll.insert(i);
+	ll.insert(i);
+	ll.insert(i);
 	ll.Traverse();
 }
 void g()
@@ -81,5 +98,9 @@ void g()
 	int _tmain(int argc, _TCHAR* argv[])
 {
 	f();
-	g();
+	//g();
+	getchar();
 }
+	
+
+
