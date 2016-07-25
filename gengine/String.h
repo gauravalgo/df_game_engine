@@ -1,5 +1,6 @@
-#include <string.h>
-#include <iostream>
+
+
+#include "stdafx.h"
 class String
 {
     //this is for test
@@ -48,4 +49,3 @@ class String
     //input and output operators
     friend class Logger;
 };
-
