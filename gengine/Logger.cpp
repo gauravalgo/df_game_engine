@@ -21,6 +21,5 @@ std::ostringstream& Logger::LOG(const char* file,int line,const char* func,int l
         os<<"  Function: "<<func;
         os<<cstring<<endl;
         cout<<os.str();
-        os.flush();
     return os;
 }

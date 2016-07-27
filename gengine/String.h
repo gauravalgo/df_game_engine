@@ -1,5 +1,6 @@
 #include <string.h>
 #include <iostream>
+#include <math.h>
 class String
 {
     //this is for test
@@ -38,7 +39,6 @@ class String
    String& Upper();
    int Length() const;
    int toInt();
-   void split();
    double toDouble();
    char *tocharArray();
    friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);

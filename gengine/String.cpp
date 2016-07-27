@@ -24,12 +24,14 @@ String::String(const char *cstring="")
     strlength=strlen(cstring);
     buffer= new char[strlength];
     strcpy(buffer,cstring);
+   // Logger::log(1,"parameterised constructor");
 }
 String::String(const String &str)
 {
     strlength=str.strlength;
     buffer= new char[strlength];
     strcpy(buffer,str.buffer);
+   // Logger::log(1,"copy constructor");
 }
 String::~String()
 {
@@ -101,6 +103,26 @@ String& String::operator+(String cstring)
     {
        int number=1,sum,i;
        sum=0;
+       number=number*pow(10,strlength-2);
+       if(buffer[0]=='-')
+        {
+            for(i=1;i<strlength;i++)
+            {
+                if((buffer[i]>='0')&&(buffer[i]<='9'))
+                {
+                    sum=(sum+(buffer[i]-'0')*number);
+                    number=number/10;
+                }
+                else
+                break;
+            }
+            if(i<strlength)
+            return -1;
+            sum=~sum;
+            sum=sum+1;
+        }
+        else
+        {
         for(i=0;i<strlength;i++)
             {
                 if((buffer[i]>='0')&&(buffer[i]<='9'))
@@ -113,12 +135,14 @@ String& String::operator+(String cstring)
             }
             if(i<strlength)
             return -1;
+        }
         return sum;
     }
 
     double String::toDouble()
     {
         /*yet to be implemented*/
+
         return -1;
     }
     void split(const String& string, String& firstpart, String& secondpart,const char& splitter)
