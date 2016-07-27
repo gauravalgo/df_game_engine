@@ -7,12 +7,12 @@ using namespace std;
 
 enum LoggerLevel
 {
-  DEBUGINFO,
-  DEBUGERROR,
-  DEBUGWARNING,
-  DEBUGMSG1,
-  DEBUGMSG2,
-  DEBUGMSG3
+    DEBUGINFO,
+    DEBUGERROR,
+    DEBUGWARNING,
+    DEBUGMSG1,
+    DEBUGMSG2,
+    DEBUGMSG3
 };
 class Logger
 {
@@ -25,7 +25,7 @@ public:
     std::ostringstream& GET(const char* file,int line,const char* func,LoggerLevel level);
     static std::ostringstream& LOG(const char* file,int line,const char* func,int level,String cstring);
     virtual ~Logger();
-    Logger(){}
+    Logger() {}
     friend class String;
 };
 //char* need to modify with the String function of the game engine

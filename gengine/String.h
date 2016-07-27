@@ -3,10 +3,10 @@
 class String
 {
     //this is for test
-    private:
-        int strlength;
-        char *buffer;
-    public:
+private:
+    int strlength;
+    char *buffer;
+public:
     String():strlength(0),buffer(NULL) //Default constructor
     {
 
@@ -32,18 +32,17 @@ class String
     bool operator==(String cstring);
     bool operator!=(String cstring);
 
-   //String functions
-   void clear();
-   String& Lower();
-   String& Upper();
-   int Length() const;
-   int toInt();
-   void split();
-   double toDouble();
-   char *tocharArray();
-   friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);
-   //casting operators
-   operator const char*();
+    //String functions
+    void clear();
+    String& Lower();
+    String& Upper();
+    int Length() const;
+    int toInt();
+    double toDouble();
+    char *tocharArray();
+    friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);
+    //casting operators
+    operator const char*();
 
     //input and output operators
     friend class Logger;

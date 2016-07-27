@@ -8,7 +8,9 @@ int main()
 
     String s="gaurav";
     String s1="sharma";
-    String s3=s1+s;
-   Logger::log(1,s3);
+    String s3="-12.534";
+    String s4=s1+s;
+    double d=s3.toDouble();
+    Logger::log(1,s3);
     return 0;
 }
