@@ -9,7 +9,7 @@ using namespace std;
 template<class T>
 class LinkList
 {
-	
+
 	private:
 	T data;
 	LinkList<T> *current;
@@ -20,7 +20,7 @@ class LinkList
 	void Traverse();
 	LinkList();
 	~LinkList();
-	
+
 };
 
 
@@ -51,12 +51,12 @@ LinkList<T>::~LinkList()
 template<class T>
 void LinkList<T>::insert(T& item)
 {
-	
+
 	if(Head==NULL)
 	{
 		current=alloc_node();
 		Head=current;
-		
+
 	}
 	else
 	{
@@ -65,7 +65,7 @@ void LinkList<T>::insert(T& item)
 	}
 		current->data=item;
 		current->current=NULL;
-		
+
 }
 template<class T>
 void LinkList<T>::Traverse()
@@ -78,29 +78,7 @@ void LinkList<T>::Traverse()
 		temp=temp->current;
 	}
 }
-void f()
-{
-	LinkList<int> ll;
-	int i=1;
-	ll.insert(i);
-	ll.insert(i);
-	ll.insert(i);
-	ll.Traverse();
-}
-void g()
-{
-	LinkList<String> ll;
-	ll.insert(String("gaurav"));
-	ll.insert(String("sharma"));
-	ll.insert(String("arshad"));
-	ll.Traverse();
-}
-	int _tmain(int argc, _TCHAR* argv[])
-{
-	f();
-	//g();
-	getchar();
-}
-	
+
+
 
 
