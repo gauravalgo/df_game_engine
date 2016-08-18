@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gtk_tut" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gtk_tut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/gtk_tut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+		</Linker>
+		<Unit filename="../GTKGame/LICENSE" />
+		<Unit filename="../GTKGame/README.md" />
+		<Unit filename="../GTKGame/gtk00/README.md" />
+		<Unit filename="../GTKGame/gtk00/hello" />
+		<Unit filename="../GTKGame/gtk00/hello.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk00/screen.png" />
+		<Unit filename="../GTKGame/gtk00/su.png" />
+		<Unit filename="../GTKGame/gtk01/1.png" />
+		<Unit filename="../GTKGame/gtk01/2.png" />
+		<Unit filename="../GTKGame/gtk01/3.png" />
+		<Unit filename="../GTKGame/gtk01/GtkWindow/GtkWindow.depend" />
+		<Unit filename="../GTKGame/gtk01/GtkWindow/GtkWindow.layout" />
+		<Unit filename="../GTKGame/gtk01/GtkWindow/bin/Debug/GtkWindow" />
+		<Unit filename="../GTKGame/gtk01/GtkWindow/icon.png" />
+		<Unit filename="../GTKGame/gtk01/GtkWindow/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk01/README.md" />
+		<Unit filename="../GTKGame/gtk02/AddAndReduce/AddAndReduce.layout" />
+		<Unit filename="../GTKGame/gtk02/AddAndReduce/bin/Debug/AddAndReduce" />
+		<Unit filename="../GTKGame/gtk02/AddAndReduce/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk02/README.md" />
+		<Unit filename="../GTKGame/gtk02/sc.png" />
+		<Unit filename="../GTKGame/gtk03/MenuBarAndToolBar/MenuBarAndToolBar.depend" />
+		<Unit filename="../GTKGame/gtk03/MenuBarAndToolBar/MenuBarAndToolBar.layout" />
+		<Unit filename="../GTKGame/gtk03/MenuBarAndToolBar/bin/Debug/MenuBarAndToolBar" />
+		<Unit filename="../GTKGame/gtk03/MenuBarAndToolBar/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk03/README.md" />
+		<Unit filename="../GTKGame/gtk03/check_item/bin/Debug/check_item" />
+		<Unit filename="../GTKGame/gtk03/check_item/check_item.depend" />
+		<Unit filename="../GTKGame/gtk03/check_item/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk03/com.png" />
+		<Unit filename="../GTKGame/gtk03/menu.png" />
+		<Unit filename="../GTKGame/gtk03/menubar.png" />
+		<Unit filename="../GTKGame/gtk03/quitMenu/bin/Debug/quitMenu" />
+		<Unit filename="../GTKGame/gtk03/quitMenu/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk03/quitMenu/quitMenu.layout" />
+		<Unit filename="../GTKGame/gtk03/statusbar.png" />
+		<Unit filename="../GTKGame/gtk04/README.md" />
+		<Unit filename="../GTKGame/gtk04/Toolbar/Toolbar.depend" />
+		<Unit filename="../GTKGame/gtk04/Toolbar/Toolbar.layout" />
+		<Unit filename="../GTKGame/gtk04/Toolbar/bin/Debug/Toolbar" />
+		<Unit filename="../GTKGame/gtk04/Toolbar/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk04/case.png" />
+		<Unit filename="../GTKGame/gtk04/toolbar.png" />
+		<Unit filename="../GTKGame/gtk04/undo_redo/bin/Debug/undo_redo" />
+		<Unit filename="../GTKGame/gtk04/undo_redo/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk04/undo_redo/undo_redo.depend" />
+		<Unit filename="../GTKGame/gtk04/undo_redo/undo_redo.layout" />
+		<Unit filename="../GTKGame/gtk04/undo_redo1.png" />
+		<Unit filename="../GTKGame/gtk04/undo_redo2.png" />
+		<Unit filename="../GTKGame/gtk04/undo_redo3.png" />
+		<Unit filename="../GTKGame/gtk05/GtkAlignment/GtkAlignment.depend" />
+		<Unit filename="../GTKGame/gtk05/GtkAlignment/bin/Debug/GtkAlignment" />
+		<Unit filename="../GTKGame/gtk05/GtkAlignment/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/GtkFixed/GtkFixed.layout" />
+		<Unit filename="../GTKGame/gtk05/GtkFixed/bin/Debug/GtkFixed" />
+		<Unit filename="../GTKGame/gtk05/GtkFixed/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/GtkTable/bin/Debug/GtkTable" />
+		<Unit filename="../GTKGame/gtk05/GtkTable/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/GtkTableTest/GtkTableTest.depend" />
+		<Unit filename="../GTKGame/gtk05/GtkTableTest/bin/Debug/GtkTableTest" />
+		<Unit filename="../GTKGame/gtk05/GtkTableTest/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/GtkVBox/GtkVBox.depend" />
+		<Unit filename="../GTKGame/gtk05/GtkVBox/bin/Debug/GtkVBox" />
+		<Unit filename="../GTKGame/gtk05/GtkVBox/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/README.md" />
+		<Unit filename="../GTKGame/gtk05/Windows/Windows.depend" />
+		<Unit filename="../GTKGame/gtk05/Windows/bin/Debug/Windows" />
+		<Unit filename="../GTKGame/gtk05/Windows/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk05/ali.png" />
+		<Unit filename="../GTKGame/gtk05/box.png" />
+		<Unit filename="../GTKGame/gtk05/fixed1.png" />
+		<Unit filename="../GTKGame/gtk05/fixed2.png" />
+		<Unit filename="../GTKGame/gtk05/table.png" />
+		<Unit filename="../GTKGame/gtk05/table2.png" />
+		<Unit filename="../GTKGame/gtk05/window.png" />
+		<Unit filename="../GTKGame/gtk06/1.png" />
+		<Unit filename="../GTKGame/gtk06/2.png" />
+		<Unit filename="../GTKGame/gtk06/3.png" />
+		<Unit filename="../GTKGame/gtk06/4.png" />
+		<Unit filename="../GTKGame/gtk06/5.png" />
+		<Unit filename="../GTKGame/gtk06/6.png" />
+		<Unit filename="../GTKGame/gtk06/DragAndDrop/bin/Debug/DragAndDrop" />
+		<Unit filename="../GTKGame/gtk06/DragAndDrop/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk06/README.md" />
+		<Unit filename="../GTKGame/gtk06/Timer/Timer.depend" />
+		<Unit filename="../GTKGame/gtk06/Timer/bin/Debug/Timer" />
+		<Unit filename="../GTKGame/gtk06/Timer/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk06/disCallback/bin/Debug/disCallback" />
+		<Unit filename="../GTKGame/gtk06/disCallback/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk06/enterSignal/bin/Debug/enterSignal" />
+		<Unit filename="../GTKGame/gtk06/enterSignal/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk06/event01/bin/Debug/event01" />
+		<Unit filename="../GTKGame/gtk06/event01/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk06/window_moving/bin/Debug/window_moving" />
+		<Unit filename="../GTKGame/gtk06/window_moving/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk07/1.png" />
+		<Unit filename="../GTKGame/gtk07/10.png" />
+		<Unit filename="../GTKGame/gtk07/2.png" />
+		<Unit filename="../GTKGame/gtk07/3.png" />
+		<Unit filename="../GTKGame/gtk07/4.png" />
+		<Unit filename="../GTKGame/gtk07/5.png" />
+		<Unit filename="../GTKGame/gtk07/6.png" />
+		<Unit filename="../GTKGame/gtk07/7.png" />
+		<Unit filename="../GTKGame/gtk07/8.png" />
+		<Unit filename="../GTKGame/gtk07/9.png" />
+		<Unit filename="../GTKGame/gtk07/README.md" />
+		<Unit filename="../GTKGame/gtk07/aboutDialog/battery.jpg" />
+		<Unit filename="../GTKGame/gtk07/aboutDialog/bin/Release/aboutDialog" />
+		<Unit filename="../GTKGame/gtk07/aboutDialog/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk07/colorDialog/bin/Release/colorDialog" />
+		<Unit filename="../GTKGame/gtk07/colorDialog/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk07/fontDialog/bin/Release/fontDialog" />
+		<Unit filename="../GTKGame/gtk07/fontDialog/fontDialog.depend" />
+		<Unit filename="../GTKGame/gtk07/fontDialog/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk07/msgDialog/bin/Debug/msgDialog" />
+		<Unit filename="../GTKGame/gtk07/msgDialog/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk07/msgDialog/msgDialog.layout" />
+		<Unit filename="../GTKGame/gtk08/README.md" />
+		<Unit filename="../GTKGame/gtk08/README.md~" />
+		<Unit filename="../GTKGame/gtk08/button.png" />
+		<Unit filename="../GTKGame/gtk08/button/bin/Debug/button" />
+		<Unit filename="../GTKGame/gtk08/button/button.layout" />
+		<Unit filename="../GTKGame/gtk08/button/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk08/check1.png" />
+		<Unit filename="../GTKGame/gtk08/check2.png" />
+		<Unit filename="../GTKGame/gtk08/checkBtn/bin/Debug/checkBtn" />
+		<Unit filename="../GTKGame/gtk08/checkBtn/checkBtn.layout" />
+		<Unit filename="../GTKGame/gtk08/checkBtn/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk08/frame.png" />
+		<Unit filename="../GTKGame/gtk08/frame/bin/Debug/frame" />
+		<Unit filename="../GTKGame/gtk08/frame/frame.depend" />
+		<Unit filename="../GTKGame/gtk08/frame/frame.layout" />
+		<Unit filename="../GTKGame/gtk08/frame/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk08/label/bin/Debug/label" />
+		<Unit filename="../GTKGame/gtk08/label/label.layout" />
+		<Unit filename="../GTKGame/gtk08/label/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk08/label1.png" />
+		<Unit filename="../GTKGame/gtk08/label2.png" />
+		<Unit filename="../GTKGame/gtk08/markup/bin/Debug/markup" />
+		<Unit filename="../GTKGame/gtk08/markup/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/README.md" />
+		<Unit filename="../GTKGame/gtk09/combo.png" />
+		<Unit filename="../GTKGame/gtk09/combobox/bin/Debug/combobox" />
+		<Unit filename="../GTKGame/gtk09/combobox/combobox.layout" />
+		<Unit filename="../GTKGame/gtk09/combobox/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/entry.png" />
+		<Unit filename="../GTKGame/gtk09/entry/bin/Debug/entry" />
+		<Unit filename="../GTKGame/gtk09/entry/entry.depend" />
+		<Unit filename="../GTKGame/gtk09/entry/entry.layout" />
+		<Unit filename="../GTKGame/gtk09/entry/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/iconview/bin/Debug/iconview" />
+		<Unit filename="../GTKGame/gtk09/iconview/blender.png" />
+		<Unit filename="../GTKGame/gtk09/iconview/gnumeric.png" />
+		<Unit filename="../GTKGame/gtk09/iconview/iconview.depend" />
+		<Unit filename="../GTKGame/gtk09/iconview/iconview.layout" />
+		<Unit filename="../GTKGame/gtk09/iconview/inkscape.png" />
+		<Unit filename="../GTKGame/gtk09/iconview/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/iconview/ubuntu.png" />
+		<Unit filename="../GTKGame/gtk09/image.png" />
+		<Unit filename="../GTKGame/gtk09/image/bin/Debug/image" />
+		<Unit filename="../GTKGame/gtk09/image/image.layout" />
+		<Unit filename="../GTKGame/gtk09/image/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/image/redrock.jpg" />
+		<Unit filename="../GTKGame/gtk09/iv.png" />
+		<Unit filename="../GTKGame/gtk09/sep.png" />
+		<Unit filename="../GTKGame/gtk09/separator/bin/Debug/separator" />
+		<Unit filename="../GTKGame/gtk09/separator/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/separator/separator.depend" />
+		<Unit filename="../GTKGame/gtk09/separator/separator.layout" />
+		<Unit filename="../GTKGame/gtk09/status.png" />
+		<Unit filename="../GTKGame/gtk09/statusbar/bin/Debug/statusbar" />
+		<Unit filename="../GTKGame/gtk09/statusbar/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../GTKGame/gtk09/statusbar/statusbar.depend" />
+		<Unit filename="../GTKGame/gtk09/statusbar/statusbar.layout" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
