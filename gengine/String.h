@@ -24,13 +24,13 @@ public:
     String& operator+=(const char *cstring);
     String& operator+=(const String& cstring);
     String& operator+(String cstring);
-
+    String& operator[](int i);
     bool operator<(String cstring);
     bool operator<=(String cstring);
     bool operator>(String cstring);
     bool operator>=(String cstring);
     bool operator==(String cstring);
-    bool operator!=(String cstring);
+    bool operator!=(const String& cstring);
 
     //String functions
     void clear();
@@ -42,7 +42,7 @@ public:
     char *tocharArray();
     friend void split(const String& string, String& firstpart, String& secondpart,const char& splitter);
     //casting operators
-    operator const char*();
+
 
     //input and output operators
     friend class Logger;

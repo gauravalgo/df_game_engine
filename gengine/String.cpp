@@ -57,6 +57,10 @@ String& String::operator+=(const String& cstring)
     strlength=new_buffer_length;
     return *this;
 }
+String& String::operator[](int i)
+{
+    return String(buffer[i]);
+}
 String& String::operator+(String cstring)
 {
     int new_buffer_length =strlen(cstring.buffer)+strlength;
@@ -148,11 +152,7 @@ char *String::tocharArray()
 {
     return buffer;
 }
-String::operator const char*()
-{
-    /*Logger::log(1,"operator user defined");*/
-    return buffer;
-}
+
 bool String::operator==(String cstring)
 {
     if(strcmp(cstring.buffer,buffer)==0)
@@ -160,7 +160,7 @@ bool String::operator==(String cstring)
     else
         return false;
 }
-bool String::operator!=(String cstring)
+bool String::operator!=(const String& cstring)
 {
     if(strcmp(cstring.buffer,buffer)==0)
         return false;

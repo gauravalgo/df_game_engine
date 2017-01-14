@@ -1,6 +1,7 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 #include<sstream>
+#include <stdio.h>
 #include "String.h"
 #define log(level,...)  Logger::LOG(__FILE__,__LINE__,__func__,level,__VA_ARGS__)
 using namespace std;

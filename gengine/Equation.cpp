@@ -1,9 +1,10 @@
+#include "Equation.h"
 Equation::Equation(int d,char *expr)
 {
     degree=d;
     Expression_String=new String(expr);
-    Real_Numbers=new Real_Numbers[degree];
-    Variables= new Variables[degree];
+    Real_Numbers=new String[degree];
+    Variables= new String[degree];
 }
 Equation::~Equation()
 {
@@ -25,7 +26,8 @@ void Equation::extract_coefficiants()
 }
 void Equation::Parser()
 {
-    while(Expression_String[i]!='\0')
+    int i;
+    while((Expression_String[i])!='\0')
         {
                 if((Expression_String[i]<='a')&&(Expression_String[i]>='z'))
                 {

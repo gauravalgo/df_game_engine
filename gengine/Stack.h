@@ -3,6 +3,7 @@
 */
 #include <stdexcept>
 #include <iostream>
+#include <cstdio>
 #include <typeinfo>
 template<class T>
 class Stack
@@ -19,6 +20,7 @@ class Stack
         bool isempty(void);
         T pop(void);
         void display();
+ std::ostream& operator<<(T s);
         bool operator!=(T number);
         bool operator==(T number);
 };

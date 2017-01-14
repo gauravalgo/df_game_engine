@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Allocator.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="25" topLine="0" />
+	<File name="Allocator.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="262" topLine="0" />
 	</File>
-	<File name="Allocator.h" open="1" top="1" tabpos="8">
-		<Cursor position="162" topLine="2" />
+	<File name="Allocator.h" open="0" top="0" tabpos="8">
+		<Cursor position="162" topLine="10" />
+	</File>
+	<File name="Equation.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="458" topLine="21" />
+	</File>
+	<File name="Equation.h" open="1" top="0" tabpos="5">
+		<Cursor position="209" topLine="1" />
+	</File>
+	<File name="LinkList.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="21" />
 	</File>
 	<File name="Logger.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="66" topLine="0" />
+		<Cursor position="621" topLine="11" />
 	</File>
-	<File name="Logger.h" open="1" top="0" tabpos="3">
-		<Cursor position="17" topLine="0" />
+	<File name="Logger.h" open="1" top="0" tabpos="8">
+		<Cursor position="69" topLine="0" />
 	</File>
-	<File name="Stack.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="149" topLine="4" />
+	<File name="Stack.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="1760" topLine="84" />
 	</File>
 	<File name="Stack.h" open="1" top="0" tabpos="1">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="404" topLine="10" />
 	</File>
-	<File name="String.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="2869" topLine="117" />
+	<File name="String.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="3553" topLine="159" />
 	</File>
 	<File name="String.h" open="1" top="0" tabpos="2">
-		<Cursor position="128" topLine="0" />
+		<Cursor position="39" topLine="3" />
 	</File>
-	<File name="gengine_main.cpp" open="1" top="0" tabpos="10">
+	<File name="gengine_main.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="313" topLine="0" />
+	<File name="main.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="573" topLine="18" />
 	</File>
 </CodeBlocks_layout_file>

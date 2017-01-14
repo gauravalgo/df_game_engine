@@ -59,7 +59,7 @@ void Stack<T>::display()
         int i=0;
         while(i<max)
         {
-            cout<<"the "<<i<<"th element of the stack is "<<items[i]<<std::endl;
+            std::cout<< "the "<< i << "th element of the stack is " << items[i] <<std::endl;
             i++;
         }
 }
@@ -87,6 +87,11 @@ template<class T>
         else
         return false;
  }
+ template<class T>
+ std::ostream&  Stack<T>::operator<<(T s)
+{   std::ostream out;
+	return out;
+}
 /* template instantion of various types*/
 template class Stack<int>;
 template class Stack<String>;
