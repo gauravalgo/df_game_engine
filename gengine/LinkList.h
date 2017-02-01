@@ -1,8 +1,8 @@
 // gs.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include "String.h"
+//#include "stdafx.h"
+#include "Logger.h"
 
 using namespace std;
 

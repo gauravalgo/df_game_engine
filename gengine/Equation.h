@@ -1,4 +1,4 @@
-#include "String.h"
+#include "Logger.h"
 class Equation
 {
     private:

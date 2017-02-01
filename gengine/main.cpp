@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Logger.h"
+#include "LinkList.h"
 /*#define LOG(level,char* str)  Logger().GET(__FILE__,__LINE__,__func__,DEBUGWARNING)<<str;*/
 using namespace std;
 void f()
@@ -14,9 +15,8 @@ void f()
 void g()
 {
 	LinkList<String> ll;
-	ll.insert(String("gaurav"));
-	ll.insert(String("sharma"));
-	ll.insert(String("arshad"));
+//	ll.insert("gaurav"));
+
 	ll.Traverse();
 }
 int main()

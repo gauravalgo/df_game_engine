@@ -24,7 +24,7 @@ public:
     String& operator+=(const char *cstring);
     String& operator+=(const String& cstring);
     String& operator+(String cstring);
-    String& operator[](int i);
+    const String& operator[](int i);
     bool operator<(String cstring);
     bool operator<=(String cstring);
     bool operator>(String cstring);

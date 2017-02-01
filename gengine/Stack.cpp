@@ -59,7 +59,7 @@ void Stack<T>::display()
         int i=0;
         while(i<max)
         {
-            std::cout<< "the "<< i << "th element of the stack is " << items[i] <<std::endl;
+            //std::cout<< "the "<< i << "th element of the stack is " <<std::endl;
             i++;
         }
 }
@@ -88,8 +88,8 @@ template<class T>
         return false;
  }
  template<class T>
- std::ostream&  Stack<T>::operator<<(T s)
-{   std::ostream out;
+ std::ostream& operator<<( std::ostream& out,T s)
+{
 	return out;
 }
 /* template instantion of various types*/

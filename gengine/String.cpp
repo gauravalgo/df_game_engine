@@ -57,7 +57,7 @@ String& String::operator+=(const String& cstring)
     strlength=new_buffer_length;
     return *this;
 }
-String& String::operator[](int i)
+const String& String::operator[](int i)
 {
     return String(buffer[i]);
 }
@@ -169,7 +169,7 @@ bool String::operator!=(const String& cstring)
 }
 std::ostream&  operator<<(std::ostream& out,String s)
 {
-	out<<s.tocharArray();
+	//out<<s.tocharArray();
 	return out;
 }
 
