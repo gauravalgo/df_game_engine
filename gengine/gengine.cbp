@@ -32,8 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Logger.cpp" />
+		<Unit filename="Logger.h" />
 		<Unit filename="String.cpp" />
 		<Unit filename="String.h" />
+		<Unit filename="bin/Debug/gengine" />
+		<Unit filename="gengine.depend" />
+		<Unit filename="gengine.layout" />
 		<Unit filename="gengine_main.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>

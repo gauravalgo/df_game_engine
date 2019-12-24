@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1466283786 source:/home/gauravalgo/gengine/gengine/Logger.cpp
+	"Logger.h"
+
+1465930521 /home/gauravalgo/gengine/gengine/Logger.h
+	<sstream>
+	"String.h"
+
+1466347653 /home/gauravalgo/gengine/gengine/String.h
+	<string.h>
+	<iostream>
+	<math.h>
+
+1466347869 source:/home/gauravalgo/gengine/gengine/String.cpp
+	"Logger.h"
+
+1465931309 source:/home/gauravalgo/gengine/gengine/gengine_main.cpp
+
+1466348019 source:/home/gauravalgo/gengine/gengine/main.cpp
+	<iostream>
+	"Logger.h"
+
